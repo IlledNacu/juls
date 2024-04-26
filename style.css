@@ -147,7 +147,7 @@ nav .collapse,
 .cover {
     background-image: url(assets/caratula2.jpg);
     background-size: cover;
-    height: 80vh;
+    height: 55vh;
 
     display: flex;
     flex-direction: column;
@@ -157,7 +157,7 @@ nav .collapse,
 q {
     quotes: '«' '»' '"' '"';
     font-variant: small-caps;
-    font-size: 1.3em !important;
+    font-size: 1.1em;
     font-weight: bolder;
 }
 
@@ -170,8 +170,8 @@ q:after {
 }
 
 .cover p {
-    font-size: 18px;
-    margin-left: 45px;
+    font-size: 16px;
+    margin-left: 30px;
     color: hsla(0, 0%, 100%, 60%);
     font-weight: lighter;
 }
@@ -247,7 +247,7 @@ strong {
     align-items: center;
     padding: 0;
     margin: 0;
-    font-size: 1.7em;
+    font-size: 1.2em;
 }
 
 .seccion-servicios img {
@@ -370,7 +370,12 @@ footer a {
 /*Tablet*/
 @media (min-width: 768px) {
     .cover {
-        height: 90vh;
+        height: 65vh;
+    }
+
+    .cover p{
+        margin-left: 50px;
+        font-size: 28px;
     }
 
     .quien-soy .row:first-child {
@@ -424,14 +429,20 @@ footer a {
     .order10 img {
         display: none;
     }
+
+    .seccion-servicios .col-6 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width:800px){
+    .cover {
+        height: 100vh;
+    }
 }
 
 /*Desktop*/
 @media (min-width:1200px) {
-    .cover {
-        height: 100vh;
-    }
-
     .quien-soy .col {
         flex-direction: row;
     }
