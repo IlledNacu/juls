@@ -437,12 +437,16 @@ footer a {
 
 @media (min-width:800px){
     .cover {
-        height: 100vh;
+        height: 75vh;
     }
 }
 
 /*Desktop*/
 @media (min-width:1200px) {
+    .cover {
+        height: 100vh;
+    }
+
     .quien-soy .col {
         flex-direction: row;
     }
