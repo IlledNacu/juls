@@ -1,0 +1,486 @@
+/* FUENTES */
+
+@font-face {
+    font-family: 'Bernardo Moda';
+    src: url('fonts/Bernardo\ Moda\ contrast.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-style: normal;
+}
+
+/* CUERPO DE LA PÁGINA */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Bernardo Moda", sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+/* Botón de WPP */
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: hsla(0, 0%, 8%, 50%);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 1px 1px 2px hsla(0, 0%, 100%, 50%);
+    z-index: 1000;
+}
+
+.whatsapp-float svg {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.whatsapp-float:hover {
+    color: #25d366;
+}
+
+/* NAVEGADOR */
+
+nav,
+.container-fluid,
+.navbar-brand,
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+.navbar-collapse {
+    width: 100%;
+    background-color: #141414;
+    z-index: 2;
+
+    border-bottom: 1px dashed #ffffff;
+}
+
+nav .container-fluid {
+    flex-direction: column;
+}
+
+nav .nav-item {
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+}
+
+nav .nav-item:hover {
+    transform: scale(150%);
+    -webkit-transform: scale(150%);
+    -moz-transform: scale(150%);
+    -ms-transform: scale(150%);
+    -o-transform: scale(150%);
+}
+
+nav .navbar-collapse,
+.navbar-toggler {
+    position: fixed;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 24px;
+    font-variant: small-caps;
+}
+
+nav .navbar-toggler {
+    background-color: #141414;
+    margin: 1em;
+    z-index: 3;
+}
+
+nav .collapse,
+.navbar-collapse {
+    text-align: center;
+}
+
+/* COVER */
+
+.cover {
+    background-image: url(assets/caratula2.jpg);
+    background-size: cover;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+q {
+    quotes: '«' '»' '"' '"';
+    font-variant: small-caps;
+    font-size: 1.3em !important;
+    font-weight: bolder;
+}
+
+q:before {
+    content: open-quote;
+}
+
+q:after {
+    content: close-quote;
+}
+
+.cover p {
+    font-size: 18px;
+    margin-left: 45px;
+    color: hsla(0, 0%, 100%, 60%);
+    font-weight: lighter;
+}
+
+/* SECCIÓN NOSOTROS */
+
+.nosotros {
+    background: linear-gradient(to bottom, #000000, #141414);
+    display: flex;
+    flex-direction: column;
+}
+
+.propuesta {
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.firma {
+    font-family: "Bernardo Moda", sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+strong {
+    font-family: "Bernardo Moda", sans-serif;
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+.quien-soy {
+    background-image: url(assets/SINFONDOblanc_sintitulo.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.quien-soy img {
+    width: 100%;
+    border: 1px solid #000000;
+    margin: 12px 0;
+}
+
+.quien-soy h3 {
+    text-align: center;
+}
+
+.quien-soy .col {
+    border: 1px dashed #ffffff;
+    background-color: hsla(0, 0%, 0%, 80%);
+    color: hsla(0, 0%, 100%, 80%);
+
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+}
+
+/* SECCIÓN SERVICIOS */
+
+.seccion-servicios {
+    width: 100%;
+}
+
+.seccion-servicios .col-6 {
+    font-family: "Bernardo Moda", sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.7em;
+}
+
+.seccion-servicios img {
+    width: 100%;
+    opacity: 0.9;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.seccion-servicios a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s, color 0.7s;
+    -webkit-transition: background-color 0.5s, color 0.7s;
+    -moz-transition: background-color 0.5s, color 0.7s;
+    -ms-transition: background-color 0.5s, color 0.7s;
+    -o-transition: background-color 0.5s, color 0.7s;
+}
+
+.seccion-servicios a:hover {
+    background-color: hsla(0, 0%, 50%, 50%);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.seccion-contacto,
+.seccion-contacto a,
+.seccion-servicios a,
+.servicios a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SECCIÓN CONTACTO */
+
+.seccion-contacto a:hover {
+    color: gray;
+}
+
+.seccion-contacto img {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.seccion-contacto .row:first-child {
+    color: hsla(0, 0%, 100%, 50%);
+}
+
+.seccion-contacto .row:last-child {
+    text-align: center;
+    margin-top: 50px;
+    gap: 70px;
+}
+
+.redes-sociales h3 {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    color: hsla(0, 0%, 100%, 60%);
+}
+
+.form-control {
+    font-weight: bold;
+    background-color: #000000;
+}
+
+.form-control:not(:placeholder-shown),
+.form-control:focus {
+    background-color: hsla(0, 0%, 100%, 50%);
+}
+
+.btn-outline-success {
+    font-weight: bolder;
+}
+
+.bi-instagram,
+.bi-linkedin {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.bi-instagram:hover {
+    color: #DD2A7B;
+}
+
+.bi-linkedin:hover {
+    color: #0e76a8;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: hsla(0, 0%, 100%, 50%);
+    height: 10vh;
+    font-size: 0.7em;
+
+    background: linear-gradient(to bottom, #141414, #000000);
+}
+
+footer a:hover {
+    color: hsla(0, 0%, 100%, 10%);
+}
+
+footer a {
+    color: hsla(0, 0%, 100%, 20%);
+    text-decoration: none;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    .cover {
+        height: 90vh;
+    }
+
+    .quien-soy .row:first-child {
+        justify-content: center;
+    }
+
+    .quien-soy img {
+        width: 75%;
+    }
+
+    .order1 {
+        order: 1;
+    }
+
+    .order2 {
+        order: 2;
+    }
+
+    .order3 {
+        order: 3;
+    }
+
+    .order4 {
+        order: 4;
+    }
+
+    .order5 {
+        order: 5;
+    }
+
+    .order6 {
+        order: 6;
+    }
+
+    .order7 {
+        order: 7;
+    }
+
+    .order8 {
+        order: 8;
+    }
+
+    .order9 {
+        order: 9;
+    }
+
+    .order10 {
+        order: 10;
+    }
+
+    .order10 img {
+        display: none;
+    }
+}
+
+/*Desktop*/
+@media (min-width:1200px) {
+    .cover {
+        height: 100vh;
+    }
+
+    .quien-soy .col {
+        flex-direction: row;
+    }
+
+    .quien-soy .row {
+        flex-direction: column;
+    }
+
+    .quien-soy .row:first-child {
+        width: 40%;
+    }
+
+    .quien-soy .row:last-child {
+        width: 60%;
+        padding-top: 12px;
+    }
+
+    .quien-soy img {
+        width: 90%;
+    }
+
+    .seccion-contacto .col {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .seccion-contacto .row {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+    }
+
+    .seccion-contacto .row .col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccion-contacto .row:last-child {
+        text-align: end;
+        margin-top: 0;
+        gap: 40px;
+    }
+
+    .redes-sociales{
+        margin-top: 26px;
+    }
+    
+    .tarjeta-contacto .col{
+        flex: 0;
+    }
+}

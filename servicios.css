@@ -1,0 +1,156 @@
+.servicios .col img {
+    width: 100%;
+}
+
+.servicios .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.servicios ul {
+    list-style-type: circle;
+    text-align: justify;
+    padding: 1em 2em;
+}
+
+.servicios h3 {
+    margin-top: 2em;
+    color: hsla(0, 0%, 100%, 20%);
+}
+
+.servicios h4,
+.servicios h5,
+.servicios ul {
+    color: hsla(0, 0%, 100%, 80%);
+}
+
+.servicios .navbar-brand{
+    display: block;
+}
+
+.servicios-cover{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 5px;
+    align-content: center;
+}
+
+.asesoramiento_y_capacitaciones .col-5 {
+    border-left: 1px dashed #ffffff;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+.instalaciones_complementarias .row{
+    padding: 0;
+    margin: 0;
+}
+
+.instalaciones_complementarias .row .col:first-child{
+    background-image: url(assets/001.jpg);
+    background-size: cover;
+}
+
+.instalaciones_complementarias .row .col:last-child{
+    background-image: url(assets/002.jpg);
+    
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    
+
+    .servicios h3 {
+        margin-top: 2em;
+        font-size: 30px;
+    }
+
+    .servicios h4{
+        font-size: 24px;
+    }
+
+    .servicios ul{
+        
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 900px){
+    .servicios .navbar-brand{
+        display: none;
+    }
+
+    .proyecto-header .navbar-brand {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .servicios h3 {
+        margin-top: 4em;
+    }
+}
+
+/*Desktop*/
+@media (min-width:1200px) {
+    /* PÁGINAS SERVICIOS */
+
+    .servicios .col {
+        padding: 0;
+    }
+
+    .servicios-cover {
+        display: none;
+    }
+
+    .servicios h3 {
+        margin-top: 3em;
+        font-size: 40px;
+    }
+
+    .servicios h4{
+        font-size: 30px;
+    }
+
+    .servicios ul{
+        padding: 1em 3em;
+        font-size: 24px;
+    }
+
+    /* NAVEGADOR DE SUBPAGINAS */
+
+    .proyecto-header .navbar-brand {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width:899px){
+    .asesoramiento_y_capacitaciones .row{
+        flex-direction: column;
+    }
+
+    .asesoramiento_y_capacitaciones .row, .asesoramiento_y_capacitaciones .col-6 img, .asesoramiento_y_capacitaciones div.col, .asesoramiento_y_capacitaciones .col-6, .asesoramiento_y_capacitaciones .col-5{
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .asesoramiento_y_capacitaciones h5{
+        text-align: end;
+    }
+
+    .asesoramiento_y_capacitaciones .col-6:last-child ul{
+        text-align: end;
+        list-style: none;
+    }
+
+    .asesoramiento_y_capacitaciones h4{
+        text-align: start;
+    }
+
+    .asesoramiento_y_capacitaciones .col-5 p{
+        text-align: justify;
+    }
+}
