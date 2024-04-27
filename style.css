@@ -435,12 +435,6 @@ footer a {
     }
 }
 
-@media (min-width:800px){
-    .cover {
-        height: 70vh;
-    }
-}
-
 /*Desktop*/
 @media (min-width:1200px) {
     .cover {
