@@ -10,10 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Fonts-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
         rel="stylesheet">
     <!--Estilos personalizados-->
     <link rel="stylesheet" href="style.css">
@@ -58,15 +61,18 @@
     </header>
 
     <main>
-        <section class="cover unselectable">
-            <p><q> Los buenos proyectos hacen preguntas. </q>
+        <a class="cover" href="#nosotros">
+            <!-- <p><q> Los buenos proyectos hacen preguntas. </q>
                 <br>Arq. Alejandro Zaera Polo, 2003
-            </p>
-        </section>
+            </p> -->
+        </a>
         <section class="nosotros py-5 text-center unselectable" id="nosotros">
             <h2 hidden>Nosotros</h2>
             <div class="container">
-                <p class="propuesta"><strong>Nosotros te ayudamos a encontrar las respuestas.</strong><br>
+                <p class="cita unselectable"><q class="tangerine-regular"> Los buenos proyectos hacen preguntas. </q>
+                    <br>Arq. Alejandro Zaera Polo, 2003
+                </p><br>
+                <p class="propuesta unselectable"><strong>Nosotros te ayudamos a encontrar las respuestas.</strong><br>
                     Somos un grupo de profesionales dedicados al
                     asesoramiento de la Normativa para la Construcción en la Ciudad Autónoma de Buenos Aires, bajo
                     responsabilidad de la arquitecta Julia
@@ -80,26 +86,29 @@
                             <p class="text-center">Arquitecta especializada en asesoramiento técnico<br>CPAU
                                 <strong>30045</strong>
                             </p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis ab autem
-                                cumque labore
-                                vitae
-                                itaque alias sequi aliquam ad illum, est porro sit vel tempora pariatur harum vero
-                                rerum nisi?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, consequuntur. Eum,
-                                quod ea
-                                rerum earum aliquam repellendus fuga reiciendis quidem qui ratione totam incidunt
-                                corrupti.
-                                Voluptatem aut neque incidunt excepturi!<br>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sapiente,
-                                asperiores,
-                                neque labore earum doloribus reprehenderit, ex quos et delectus soluta alias? At
-                                sint nemo
-                                optio, error commodi suscipit asperiores. Lorem ipsum dolor sit amet consectetur
-                                adipisicing
-                                elit. Nemo odio ipsam consequuntur nihil eveniet. Accusamus, delectus corporis ipsum
-                                non veniam
-                                voluptatibus adipisci laudantium, dicta laborum explicabo et iste vel consequatur?
-                            </p>
+                            <div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis ab autem
+                                    cumque labore
+                                    vitae
+                                    itaque alias sequi aliquam ad illum, est porro sit vel tempora pariatur harum vero
+                                    rerum nisi?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, consequuntur. Eum,
+                                    quod ea
+                                    rerum earum aliquam repellendus fuga reiciendis quidem qui ratione totam incidunt
+                                    corrupti.
+                                    Voluptatem aut neque incidunt excepturi!<br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sapiente,
+                                    asperiores,
+                                    neque labore earum doloribus reprehenderit, ex quos et delectus soluta alias? At
+                                    sint nemo
+                                    optio, error commodi suscipit asperiores. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit. Nemo odio ipsam consequuntur nihil eveniet. Accusamus, delectus corporis ipsum
+                                    non veniam
+                                    voluptatibus adipisci laudantium, dicta laborum explicabo et iste vel consequatur?
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -169,8 +178,16 @@
                     </div>
                     <div class="metodos-pago unselectable col">
                         <h3 class="mb-3">Métodos de pago</h3>
-                        <div class="mp-hover"><img src="assets/mercadopago_logo_icon_248494.svg" width="50px"
-                                class="bi-mp">
+                        <div class="metodos">
+                            <figure class="mp-hover"><img src="assets/mercadopago_logo_icon_248494.svg" width="50px"
+                                    class="bi-mp" alt="Mercado Pago"><figcaption>MercadoPago</figcaption>
+                            </figure>
+                            <figure class="mp-hover"><img src="assets/cash-coin.svg" width="50px" class="bi-mp"
+                                    alt="Efectivo"><figcaption>Efectivo</figcaption>
+                            </figure>
+                            <figure class="mp-hover"><img src="assets/bank.svg" width="50px" class="bi-mp"
+                                    alt="Transferencia"><figcaption>Transferencia</figcaption>
+                            </figure>
                         </div>
 
                     </div>
