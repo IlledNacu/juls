@@ -7,6 +7,13 @@
     font-weight: normal;
 }
 
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 .tangerine-regular {
     font-family: "Tangerine", cursive;
     font-weight: 400;
@@ -25,13 +32,14 @@
     font-weight: bold;
 }
 
-/* 
-.montserrat {
+/*.montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: light;
     font-style: normal;
 } */
+
+
 
 /* CUERPO DE LA PÁGINA */
 
@@ -41,7 +49,10 @@
 
 body {
     background-color: #141414;
-    font-family: "Poiret One", sans-serif;
+    /* font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Poiret One", sans-serif; 
     font-weight: bold;
     color: #ffffff;
 }
@@ -138,6 +149,11 @@ nav .nav-item:hover {
     -moz-transform: scale(150%);
     -ms-transform: scale(150%);
     -o-transform: scale(150%);
+
+}
+
+nav .nav-link:hover {
+    color: rgb(234, 173, 0) !important;
 }
 
 nav .navbar-collapse,
@@ -183,8 +199,8 @@ q {
     /* font-variant: small-caps; */
     font-size: 60px;
     font-weight: bolder;
-    line-height:60px;
-    color: #ffffff;
+    line-height: 60px;
+    color: rgb(234, 173, 0);
 }
 
 q:before {
@@ -226,16 +242,18 @@ strong {
     font-family: "Bernardo Moda", sans-serif;
     font-variant: small-caps;
     font-size: 1.5em;
+
+    color: rgb(234, 173, 0);
 }
 
-.quien-soy .row:last-child div{
+.quien-soy .row:last-child div {
     background-image: url(assets/SINFONDOblanc_sintitulo.png);
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
-.quien-soy .row:last-child div p{
+.quien-soy .row:last-child div p {
     background-color: hsla(0, 0%, 0%, 80%);
 }
 
@@ -336,15 +354,24 @@ strong {
 .form-control {
     font-weight: bold;
     background-color: #000000;
+    color: #ffffff;
 }
 
 .form-control:not(:placeholder-shown),
 .form-control:focus {
-    background-color: hsla(0, 0%, 100%, 50%);
+    background-color: linear-gradient(to right, rgb(234, 173, 0), rgb(240, 234, 76));
 }
 
 .btn-outline-success {
     font-weight: bolder;
+
+    border-color: rgb(234, 173, 0) !important;
+    color: rgb(234, 173, 0) !important;
+}
+
+.btn-outline-success:hover {
+    background-color: rgb(234, 173, 0) !important;
+    color: #ffffff !important;
 }
 
 .seccion-contacto .row:last-child {
@@ -357,7 +384,7 @@ strong {
     margin-bottom: 16px;
 }
 
-.metodos{
+.metodos {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -365,9 +392,9 @@ strong {
     justify-content: center;
 }
 
-figcaption{
+figcaption {
     font-weight: lighter;
-    
+
 }
 
 .bi-instagram,
@@ -417,8 +444,8 @@ footer a {
     }
 
     .cita {
+        font-size: 20px;
         margin-left: 50px;
-        font-size: 28px;
     }
 
     .quien-soy .row:first-child {
@@ -438,19 +465,19 @@ footer a {
     }
 
     .order3 {
-        order: 3;
-    }
-
-    .order4 {
         order: 4;
     }
 
+    .order4 {
+        order: 3;
+    }
+
     .order5 {
-        order: 5;
+        order: 6;
     }
 
     .order6 {
-        order: 6;
+        order: 5;
     }
 
     .order7 {
@@ -469,8 +496,12 @@ footer a {
         order: 10;
     }
 
-    .order10 img {
-        display: none;
+    .order11 {
+        order: 12;
+    }
+
+    .order12 {
+        order: 11;
     }
 
     .seccion-servicios .col-6 {
@@ -483,6 +514,7 @@ footer a {
     .cover {
         height: 100vh;
     }
+
 
     .quien-soy .col {
         flex-direction: row;
