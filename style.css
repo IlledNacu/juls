@@ -510,11 +510,10 @@ footer a {
 }
 
 /*Desktop*/
-@media (min-width:1200px) {
+@media (min-width:992px) {
     .cover {
         height: 100vh;
     }
-
 
     .quien-soy .col {
         flex-direction: row;
@@ -567,4 +566,8 @@ footer a {
     .tarjeta-contacto .col {
         flex: 0;
     } */
+
+    .servicios{
+        padding-top: 100px;
+    }
 }
