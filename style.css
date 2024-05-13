@@ -128,7 +128,7 @@ nav,
     background-color: #141414;
     z-index: 2;
 
-    border-bottom: 1px dashed #ffffff;
+    /* border-bottom: 1px dashed #ffffff; */
 }
 
 nav .container-fluid {
@@ -264,7 +264,7 @@ strong {
 .quien-soy img {
     width: 100%;
     border: 1px solid #000000;
-    margin: 12px 0;
+    padding: 0;
 }
 
 .quien-soy h3 {
@@ -272,7 +272,8 @@ strong {
 }
 
 .quien-soy .col {
-    border: 1px dashed #ffffff;
+    /* border: 1px dashed #ffffff; */
+    
     background-color: hsla(0, 0%, 0%, 100%);
     color: hsla(0, 0%, 100%, 80%);
 
@@ -281,7 +282,28 @@ strong {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 12px;
+}
+
+.slide button{
+    background-color: transparent;
+    border: none;
+    
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.slide-img{
+    border: none;
+    width: 25%;
+}
+.slide button:hover{
+    transform: scale(120%);
+    -webkit-transform: scale(120%);
+    -moz-transform: scale(120%);
+    -ms-transform: scale(120%);
+    -o-transform: scale(120%);
 }
 
 /* SECCIÓN SERVICIOS */
