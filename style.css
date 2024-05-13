@@ -153,7 +153,8 @@ nav .nav-item:hover {
 }
 
 nav .nav-link:hover {
-    color: rgb(234, 173, 0) !important;
+    color: #DDA0DD !important;
+    /* color: rgb(234, 173, 0) !important; */
 }
 
 nav .navbar-collapse,
@@ -200,7 +201,9 @@ q {
     font-size: 60px;
     font-weight: bolder;
     line-height: 60px;
-    color: rgb(234, 173, 0);
+
+    color: #DDA0DD;
+    /* color: rgb(234, 173, 0); */
 }
 
 q:before {
@@ -243,7 +246,8 @@ strong {
     font-variant: small-caps;
     font-size: 1.5em;
 
-    color: rgb(234, 173, 0);
+    color: #DDA0DD;
+    /* color: rgb(234, 173, 0); */
 }
 
 .quien-soy .row:last-child div {
@@ -319,7 +323,8 @@ strong {
 }
 
 .seccion-servicios a:hover {
-    background-color: hsla(0, 0%, 50%, 50%);
+    background-color: hsla(300, 47%, 75%, 50%);
+    /* background-color: hsla(0, 0%, 50%, 50%); */
     color: #ffffff;
     font-weight: bold;
 }
@@ -334,8 +339,12 @@ strong {
 
 /* SECCIÓN CONTACTO */
 
+.datos-contacto{
+    font-size: 24px;
+}
+
 .seccion-contacto a:hover {
-    color: gray;
+    color: hsl(300, 47%, 75%);
 }
 
 .seccion-contacto img {
@@ -357,21 +366,30 @@ strong {
     color: #ffffff;
 }
 
-.form-control:not(:placeholder-shown),
+.form-control:not(:placeholder-shown){
+    background-color: hsla(300, 47%, 75%, 50%);
+}
+
 .form-control:focus {
-    background-color: linear-gradient(to right, rgb(234, 173, 0), rgb(240, 234, 76));
+    background-color: #DDA0DD;
+    /* background-color: linear-gradient(to right, rgb(234, 173, 0), rgb(240, 234, 76)); */
 }
 
 .btn-outline-success {
     font-weight: bolder;
 
-    border-color: rgb(234, 173, 0) !important;
-    color: rgb(234, 173, 0) !important;
+    border-color: hsla(300, 47%, 75%, 50%) !important;
+    color: hsla(300, 47%, 75%, 50%);
+
+    /* border-color: rgb(234, 173, 0) !important;
+    color: rgb(234, 173, 0) !important; */
 }
 
 .btn-outline-success:hover {
-    background-color: rgb(234, 173, 0) !important;
-    color: #ffffff !important;
+    background-color: hsla(300, 47%, 75%, 50%);
+    color: #ffffff;
+    /* background-color: rgb(234, 173, 0) !important;
+    color: #ffffff !important; */
 }
 
 .seccion-contacto .row:last-child {
