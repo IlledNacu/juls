@@ -6,12 +6,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+}
+
+.servicios .row{
+    padding-right: 0 !important;
 }
 
 .servicios ul {
-    list-style-type: circle;
+    list-style-type:none;
     text-align: justify;
-    padding: 1em 2em;
+    padding: 36px !important;
+}
+
+.lista ul li::before {
+    content: "+";
+    margin-right: 25px;
+    color: hsl(300, 47%, 75%);
+    font-weight: bold;
 }
 
 .servicios h3 {

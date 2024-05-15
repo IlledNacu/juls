@@ -7,12 +7,18 @@
     font-weight: normal;
 }
 
-.didact-gothic-regular {
-    font-family: "Didact Gothic", sans-serif;
+@font-face {
+    font-family: 'Gothic';
+    src: url('fonts/GOTHIC.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
 
 .tangerine-regular {
     font-family: "Tangerine", cursive;
@@ -26,10 +32,16 @@
     font-style: normal;
 }
 
-
-.poiret-one-regular {
+/* .poiret-one-regular {
     font-family: "Poiret One", sans-serif;
     font-weight: bold;
+} */
+
+.bernardo-moda {
+    font-family: "Bernardo Moda", sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: normal;
 }
 
 /*.montserrat {
@@ -41,7 +53,7 @@
 
 
 
-/* CUERPO DE LA PÁGINA */
+/* GENERALES */
 
 * {
     box-sizing: border-box;
@@ -49,11 +61,9 @@
 
 body {
     background-color: #141414;
-    /* font-family: "Didact Gothic", sans-serif;
+    font-family: 'Gothic';
     font-weight: 400;
-    font-style: normal; */
-    font-family: "Poiret One", sans-serif; 
-    font-weight: bold;
+    font-style: normal;
     color: #ffffff;
 }
 
@@ -136,6 +146,9 @@ nav .container-fluid {
 }
 
 nav .nav-item {
+    font-family: 'Gothic';
+    font-weight: 400;
+    font-style: normal;
     transition: transform 0.5s ease;
     -webkit-transition: transform 0.5s ease;
     -moz-transition: transform 0.5s ease;
@@ -154,7 +167,6 @@ nav .nav-item:hover {
 
 nav .nav-link:hover {
     color: #DDA0DD !important;
-    /* color: rgb(234, 173, 0) !important; */
 }
 
 nav .navbar-collapse,
@@ -184,26 +196,20 @@ nav .collapse,
 .cover {
     background-image: url(assets/caratula2.jpg);
     background-size: cover;
-    height: 55vh;
+    height: 50vh;
 
     display: flex;
     background-position: left center;
-    /* Centra la imagen */
     background-attachment: scroll;
-    /* El fondo se desplaza con el contenido */
-    /* flex-direction: column;
-    justify-content: end; */
 }
 
 q {
     quotes: '«' '»' '"' '"';
-    /* font-variant: small-caps; */
-    font-size: 60px;
+    font-family: 'Gothic';
+    font-size: 30px;
     font-weight: bolder;
     line-height: 60px;
-
     color: #DDA0DD;
-    /* color: rgb(234, 173, 0); */
 }
 
 q:before {
@@ -231,23 +237,26 @@ q:after {
 
 .propuesta {
     font-size: 1.3em;
-    font-weight: lighter;
+    font-weight: 100;
     margin-bottom: 30px;
 }
 
-.firma {
-    font-family: "Bernardo Moda", sans-serif;
+strong {
+    font-family: 'Gothic';
     font-variant: small-caps;
-    font-weight: bold;
+    color: #DDA0DD;
 }
 
-strong {
-    font-family: "Bernardo Moda", sans-serif;
-    font-variant: small-caps;
-    font-size: 1.5em;
+.firma {
+    font-size: 30px;
+}
 
-    color: #DDA0DD;
-    /* color: rgb(234, 173, 0); */
+.cpau{
+    font-size: 24px;
+}
+
+.propuesta strong{
+    font-size: 40px;
 }
 
 .quien-soy .row:last-child div {
@@ -259,12 +268,15 @@ strong {
 
 .quien-soy .row:last-child div p {
     background-color: hsla(0, 0%, 0%, 80%);
+    font-size: 18px;
 }
 
 .quien-soy img {
     width: 100%;
     border: 1px solid #000000;
     padding: 0;
+
+    margin-bottom: 20px;
 }
 
 .quien-soy h3 {
@@ -273,7 +285,7 @@ strong {
 
 .quien-soy .col {
     /* border: 1px dashed #ffffff; */
-    
+
     background-color: hsla(0, 0%, 0%, 100%);
     color: hsla(0, 0%, 100%, 80%);
 
@@ -284,21 +296,23 @@ strong {
     justify-content: center;
 }
 
-.slide button{
+.slide button {
     background-color: transparent;
     border: none;
-    
+
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
-.slide-img{
+
+.slide-img {
     border: none;
     width: 25%;
 }
-.slide button:hover{
+
+.slide button:hover {
     transform: scale(120%);
     -webkit-transform: scale(120%);
     -moz-transform: scale(120%);
@@ -313,7 +327,10 @@ strong {
 }
 
 .seccion-servicios .col-6 {
-    font-family: "Bernardo Moda", sans-serif;
+    font-family: 'Gothic';
+    font-weight: bolder;
+    font-style: normal;
+    /* font-family: "Bernardo Moda", sans-serif; */
     font-variant: small-caps;
     text-align: center;
     display: flex;
@@ -321,7 +338,7 @@ strong {
     align-items: center;
     padding: 0;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 24px;
 }
 
 .seccion-servicios img {
@@ -361,8 +378,8 @@ strong {
 
 /* SECCIÓN CONTACTO */
 
-.datos-contacto{
-    font-size: 24px;
+.datos-contacto {
+    font-size: 20px;
 }
 
 .seccion-contacto a:hover {
@@ -380,21 +397,25 @@ strong {
 
 .form-label {
     color: hsla(0, 0%, 100%, 60%);
+    font-weight: bold;
+
+    font-size: 20px;
 }
 
 .form-control {
-    font-weight: bold;
+    font-weight: 400;
     background-color: #000000;
     color: #ffffff;
+
+    font-size: 24px;
 }
 
-.form-control:not(:placeholder-shown){
+.form-control:not(:placeholder-shown) {
     background-color: hsla(300, 47%, 75%, 50%);
 }
 
 .form-control:focus {
     background-color: #DDA0DD;
-    /* background-color: linear-gradient(to right, rgb(234, 173, 0), rgb(240, 234, 76)); */
 }
 
 .btn-outline-success {
@@ -402,22 +423,17 @@ strong {
 
     border-color: hsla(300, 47%, 75%, 50%) !important;
     color: hsla(300, 47%, 75%, 50%);
-
-    /* border-color: rgb(234, 173, 0) !important;
-    color: rgb(234, 173, 0) !important; */
 }
 
 .btn-outline-success:hover {
     background-color: hsla(300, 47%, 75%, 50%);
     color: #ffffff;
-    /* background-color: rgb(234, 173, 0) !important;
-    color: #ffffff !important; */
 }
 
 .seccion-contacto .row:last-child {
     text-align: center;
-    margin-top: 50px;
-    gap: 70px;
+    margin-top: 70px;
+    gap: 50px;
 }
 
 .redes-sociales h3 {
@@ -486,6 +502,10 @@ footer a {
     .cita {
         font-size: 20px;
         margin-left: 50px;
+    }
+
+    .propuesta strong {
+        font-size: 50px;
     }
 
     .quien-soy .row:first-child {
@@ -607,3 +627,5 @@ footer a {
         flex: 0;
     } */
 }
+
+@media (min-width:1900px) {}

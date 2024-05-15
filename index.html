@@ -16,9 +16,10 @@
         rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet"> -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&family=Tangerine:wght@400;700&display=swap"
         rel="stylesheet">
     <!--Estilos personalizados-->
     <link rel="stylesheet" href="style.css">
@@ -63,16 +64,14 @@
     </header>
 
     <main>
-        <a class="cover" href="#nosotros">
-            <!-- <p><q> Los buenos proyectos hacen preguntas. </q>
-                <br>Arq. Alejandro Zaera Polo, 2003
-            </p> -->
-        </a>
+        <a class="cover" href="#nosotros"></a>
+
         <section class="nosotros py-5 text-center unselectable" id="nosotros">
             <h2 hidden>Nosotros</h2>
-            <div class="container">
-                <p class="cita unselectable animate__animated animate__backInLeft animate__slower"><q
-                        class="tangerine-regular"> Los buenos proyectos hacen preguntas. </q>
+
+            <div class="container py-5">
+                <p class="cita mb-5 unselectable animate__animated animate__backInLeft animate__slower"><q> Los buenos
+                        proyectos hacen preguntas. </q>
                     <br>Arq. Alejandro Zaera Polo, 2003
                 </p><br>
                 <p class="propuesta unselectable animate__animated animate__backInRight animate__slower">
@@ -80,42 +79,42 @@
                     Somos Arquitectura en Código, un grupo de profesionales dedicados al
                     asesoramiento de la Normativa para la Construcción en la Ciudad Autónoma de Buenos Aires,
                     coordinados por Julia
-                    Medina.</p>
-                <a class="slide" id="slide" href="#slide"><button><img class="slide-img" src="assets/triangle.png"></button></a>
-                
-                <div class="quien-soy container" id="quien-soy">
-                    <div class="col px-4 py-5">
-                        <div class="row"><img src="assets/index/Julia2.jpg"></div>
-                        <div class="row">
-                            <h3>Julia Elena Medina</h3><br>
-                            <p class="text-center">CPAU
-                                <strong>30045</strong>
+                    Medina.
+                </p><br>
+                <a class="slide" id="slide" href="#quien-soy"><button><img class="slide-img"
+                            src="assets/triangle.png"></button></a>
+            </div>
+
+            <div class="quien-soy container" id="quien-soy">
+                <div class="col px-4 py-5">
+                    <div class="row"><img src="assets/index/Julia2.jpg"></div>
+                    <div class="row">
+                        <h3 class="firma">Julia Elena Medina</h3><br>
+                        <p class="text-center cpau">CPAU
+                            <strong>30045</strong>
+                        </p>
+                        <div>
+                            <p>Arquitecta graduada en la Universidad de Buenos Aires y Técnica Superior en
+                                Negociación de Bienes egresada de la UTN. Cuenta con más de 15 años de experiencia
+                                en el área. Ha dictado cursos de capacitación profesional, tanto para empresas
+                                privadas como para establecimientos educativos terciarios y universitarios.<br>
+                                En 2011, formó Arquitectura en Código, conectando con un grupo de profesionales
+                                especializados en diferentes áreas que comparten el mismo objetivo: acompañar al
+                                cliente en su proyecto, asistiéndolo desde la capacidad constructiva del terreno
+                                para llevarlo a cabo, hasta poder obtener el final de obra del mismo.
                             </p>
-                            <div>
-                                <p>Arquitecta graduada en la Universidad de Buenos Aires y Técnica Superior en
-                                    Negociación de Bienes egresada de la UTN. Cuenta con más de 15 años de experiencia
-                                    en el área. Ha dictado cursos de capacitación profesional, tanto para empresas
-                                    privadas como para establecimientos educativos terciarios y universitarios.<br>
-                                    En 2011, formó Arquitectura en Código, conectando con un grupo de profesionales
-                                    especializados en diferentes áreas que comparten el mismo objetivo: acompañar al
-                                    cliente en su proyecto, asistiéndolo desde la capacidad constructiva del terreno
-                                    para llevarlo a cabo, hasta poder obtener el final de obra del mismo.
-
-                                </p>
-                            </div>
-
                         </div>
                     </div>
-                    <br>
-                    <p class="propuesta unselectable">
-                        Si estás en este proceso, escribinos; nosotros vamos a estar encantados de poder ayudar.</p>
                 </div>
+                <br>
+                <p class="propuesta unselectable">
+                    Si estás en este proceso, escribinos; nosotros vamos a estar encantados de poder ayudar.</p>
+            </div><br>
 
-            </div>
+            <a class="slide" href="#servicios"><button><img class="slide-img" src="assets/triangle.png"></button></a>
         </section>
         <br>
-        <div id="servicios"></div>
-        <section class="seccion-servicios">
+        <section class="seccion-servicios" id="servicios">
             <h2 hidden>Servicios</h2>
             <div class="container">
                 <div class="row">
@@ -142,9 +141,14 @@
                 </div>
             </div>
         </section>
-
+        <section class="pt-5 text-center">
+            <div class="container">
+                <a class="slide" href="#contacto"><button><img class="slide-img" src="assets/triangle.png"></button></a>
+            </div>
+        </section>
         <section class="seccion-contacto container py-5" id="contacto">
             <h2>Contacto</h2>
+
             <div class="col my-5">
                 <div class="formulario-contacto row">
                     <form id="formulario-contacto">
@@ -172,28 +176,11 @@
                             onclick="validarFormulario()">Enviar</button>
                     </form>
                 </div>
+
                 <div class="tarjeta-contacto row">
                     <div class="datos-contacto">
-                        <p><img><a href="">arquitecturaencodigo@gmail.com</a></p>
+                        <p><img><a href="correo-contacto">arquitecturaencodigo@gmail.com</a></p>
                         <p><img>+54 11 15 5952 4071</p>
-                    </div>
-                    <div class="metodos-pago unselectable col">
-                        <h3 class="mb-3">Métodos de pago</h3>
-                        <div class="metodos">
-                            <figure class="mp-hover"><img src="assets/mercadopago_logo_icon_248494.svg" width="50px"
-                                    class="bi-mp" alt="Mercado Pago">
-                                <figcaption>MercadoPago</figcaption>
-                            </figure>
-                            <figure class="mp-hover"><img src="assets/cash-coin.svg" width="50px" class="bi-mp"
-                                    alt="Efectivo">
-                                <figcaption>Efectivo</figcaption>
-                            </figure>
-                            <figure class="mp-hover"><img src="assets/bank.svg" width="50px" class="bi-mp"
-                                    alt="Transferencia">
-                                <figcaption>Transferencia</figcaption>
-                            </figure>
-                        </div>
-
                     </div>
                     <div class="redes-sociales unselectable col">
                         <h3>Redes sociales</h3>
@@ -210,12 +197,30 @@
                                         d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
                                 </svg></a>
                         </div>
+                    </div>
 
+                    <div class="metodos-pago unselectable col">
+                        <h3 class="mb-3">Métodos de pago</h3>
+                        <div class="metodos">
+                            <figure class="mp-hover"><img src="assets/mercadopago_logo_icon_248494.svg" width="50px"
+                                    class="bi-mp" alt="Mercado Pago">
+                                <figcaption>MercadoPago</figcaption>
+                            </figure>
+                            <figure class="mp-hover"><img src="assets/cash-coin.svg" width="50px" class="bi-mp"
+                                    alt="Efectivo">
+                                <figcaption>Efectivo</figcaption>
+                            </figure>
+                            <figure class="mp-hover"><img src="assets/bank.svg" width="50px" class="bi-mp"
+                                    alt="Transferencia">
+                                <figcaption>Transferencia</figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </section>
+        
     </main>
 
     <footer>
