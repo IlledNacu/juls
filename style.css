@@ -251,11 +251,11 @@ strong {
     font-size: 30px;
 }
 
-.cpau{
+.cpau {
     font-size: 24px;
 }
 
-.propuesta strong{
+.propuesta strong {
     font-size: 40px;
 }
 
@@ -596,7 +596,7 @@ footer a {
         width: 90%;
     }
 
-    /* .seccion-contacto .col {
+    .seccion-contacto .col {
         display: flex;
         flex-direction: row;
     }
@@ -619,13 +619,64 @@ footer a {
         gap: 40px;
     }
 
-    .redes-sociales, .metodos-pago {
+    .redes-sociales,
+    .metodos-pago {
         margin-top: 26px;
     }
 
-    .tarjeta-contacto .col {
-        flex: 0;
-    } */
+    .metodos-pago {
+        align-items: end;
+    }
 }
 
-@media (min-width:1900px) {}
+@media (min-width:1900px) {
+    /* NAVEGADOR */
+
+
+    nav .nav-item {
+        font-weight: bolder;
+    }
+
+    nav a {
+        font-size: 30px;
+    }
+
+    /* COVER */
+
+    .cover {
+        height: 70vh;
+    }
+
+    q {
+        font-size: 40px;
+    }
+
+    .cita {
+        font-size: 24px;
+    }
+
+    /* SECCIÓN NOSOTROS */
+
+    .propuesta {
+        font-size: 24px;
+        font-weight: 100;
+        margin-bottom: 30px;
+    }
+
+    .propuesta strong {
+        font-size: 60px;
+    }
+
+    .quien-soy .row:last-child div p {
+        background-color: hsla(0, 0%, 0%, 80%);
+        font-size: 22px;
+    }
+
+    .nosotros .container .slide{
+        display: none;
+    }
+
+    .seccion-servicios{
+        padding: 150px 0;
+    }
+}

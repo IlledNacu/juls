@@ -156,3 +156,17 @@
         font-size: 24px;
     }
 }
+
+@media (min-width:1900px) {
+    .proyecto-header nav .collapse{
+        padding: 10px;
+    }
+    
+    .proyecto-header .nav-link{
+        font-size: 24px !important;
+    }
+    .proyecto-header .navbar-brand{
+
+        width: 50%;
+    }
+}
