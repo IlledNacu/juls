@@ -26,7 +26,7 @@
     font-weight: bold;
 }
 
-.lista__container {
+.lista__container, .lista {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -86,6 +86,11 @@
     /* Eliminar margen derecho del último elemento en la fila */
     .lista__container li:nth-child(2n) {
         margin-right: 0;
+    }
+
+    .instalaciones_complementarias ul{
+        padding: 0 16px !important;
+        margin-top: 52px;
     }
 
     .servicios h3 {
@@ -165,8 +170,8 @@
     .proyecto-header .nav-link{
         font-size: 24px !important;
     }
-    .proyecto-header .navbar-brand{
 
+    .proyecto-header .navbar-brand{
         width: 50%;
     }
 }
