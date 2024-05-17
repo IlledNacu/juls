@@ -39,3 +39,9 @@ function validarFormulario() {
         document.getElementById('formulario-contacto').submit();
     }
 }
+
+$(document).ready(function () {
+    $('.navbar-nav .nav-link').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+    });
+});
