@@ -14,7 +14,7 @@
     font-weight: normal;
 }
 
-.questrial-regular {
+/*.questrial-regular {
     font-family: "Questrial", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -32,7 +32,7 @@
     font-style: normal;
 }
 
-/* .poiret-one-regular {
+ .poiret-one-regular {
     font-family: "Poiret One", sans-serif;
     font-weight: bold;
 } */
@@ -138,7 +138,7 @@ nav,
     background-color: #141414;
     z-index: 2;
 
-    /* border-bottom: 1px dashed #ffffff; */
+    border-bottom: 1px dashed #ffffff;
 }
 
 nav .container-fluid {
@@ -203,6 +203,8 @@ nav .collapse,
     background-attachment: scroll;
 }
 
+/* SECCIÓN NOSOTROS */
+
 q {
     quotes: '«' '»' '"' '"';
     font-family: 'Gothic';
@@ -222,12 +224,9 @@ q:after {
 
 .cita {
     font-size: 16px;
-    margin-left: 30px;
     color: hsla(0, 0%, 100%, 60%);
     font-weight: lighter;
 }
-
-/* SECCIÓN NOSOTROS */
 
 .nosotros {
     background: linear-gradient(to bottom, #000000, #141414);
@@ -284,7 +283,7 @@ strong {
 }
 
 .quien-soy .col {
-    /* border: 1px dashed #ffffff; */
+    border: 1px dashed #ffffff;
 
     background-color: hsla(0, 0%, 0%, 100%);
     color: hsla(0, 0%, 100%, 80%);
@@ -294,6 +293,14 @@ strong {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.slide{
+    display: none;
+}
+
+.presentacion .slide{
+    display: block;
 }
 
 .slide button {
@@ -516,6 +523,10 @@ footer a {
         width: 75%;
     }
 
+    .nosotros .slide{
+        display: block;
+    }
+
     .order1 {
         order: 1;
     }
@@ -594,6 +605,10 @@ footer a {
 
     .quien-soy img {
         width: 90%;
+    }
+
+    .slide{
+        display: block;
     }
 
     .seccion-contacto .col {
