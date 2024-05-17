@@ -62,18 +62,12 @@
     font-size: 18px;
 }
 
-.instalaciones_complementarias .row {
-    margin: 0;
+.instalaciones_complementarias .lista li, .asesoramiento .lista li{
+    margin: 0px 0px 16px;
 }
 
-.instalaciones_complementarias .row .col:first-child {
-    background-image: url(assets/001.jpg);
-    background-size: cover;
-}
-
-.instalaciones_complementarias .row .col:last-child {
-    background-image: url(assets/002.jpg);
-
+.capacitaciones ul{
+    line-height: 50px;
 }
 
 /*Tablet*/
