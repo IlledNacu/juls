@@ -150,30 +150,34 @@
 
             <div class="col my-5">
                 <div class="formulario-contacto row">
-                    <form id="formulario-contacto">
+                    <form id="formulario-contacto" action="https://formsubmit.co/arquitecturaencodigo@gmail.com" method="POST">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre Apellido">
+                            <input type="text" class="form-control" id="nombre" name="nombre"
+                                placeholder="Nombre Apellido" required>
                             <p id="error-nombre" class="error"></p>
                         </div>
                         <div class="mb-3">
                             <label for="telefono" class="form-label">Teléfono/Celular</label>
-                            <input type="tel" class="form-control" id="telefono" placeholder="+5411 XXXX XXXX">
+                            <input type="tel" class="form-control" id="telefono" name="telefono"
+                                placeholder="+5411 XXXX XXXX" required pattern="^\+?\d{0,13}">
                             <p id="error-telefono" class="error"></p>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="direccion@correo.com">
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="direccion@correo.com" required>
                             <p id="error-email" class="error"></p>
                         </div>
                         <div class="mb-3">
                             <label for="consulta" class="form-label">Consulta</label>
-                            <textarea class="form-control" id="consulta" rows="3"
-                                placeholder="Escriba aquí..."></textarea>
+                            <textarea class="form-control" id="consulta" name="consulta" rows="3"
+                                placeholder="Escriba aquí..." required></textarea>
                         </div>
                         <button class="btn btn-outline-success btn-lg" type="button"
                             onclick="validarFormulario()">Enviar</button>
                     </form>
+
                 </div>
 
                 <div class="tarjeta-contacto row">
@@ -219,7 +223,7 @@
 
             </div>
         </section>
-        
+
     </main>
 
     <footer>
