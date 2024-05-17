@@ -76,6 +76,7 @@
 
 .agrimensura ul, .proyecto_arquitectura ul, .gestion ul {
     padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 .agrimensura ul:last-child, .proyecto_arquitectura ul:last-child, .gestion ul:last-child{
     padding-top: 0 !important;
