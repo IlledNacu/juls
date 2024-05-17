@@ -70,6 +70,10 @@
     line-height: 50px;
 }
 
+.capacitaciones ul li:last-child::before{
+    content: none;
+}
+
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
     .lista__container {
