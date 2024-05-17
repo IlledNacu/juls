@@ -2,17 +2,17 @@
     width: 100%;
 }
 
-.servicios .col{
+.servicios .col {
     display: flex;
     flex-direction: column;
 }
 
-.servicios .row{
+.servicios .row {
     padding-right: 0 !important;
 }
 
 .servicios ul {
-    list-style-type:none;
+    list-style-type: none;
     text-align: justify;
     padding: 36px !important;
 }
@@ -24,7 +24,8 @@
     font-weight: bold;
 }
 
-.lista__container, .lista {
+.lista__container,
+.lista {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -42,53 +43,63 @@
     color: hsla(0, 0%, 100%, 80%);
 }
 
-.servicios .navbar-brand{
+.servicios .navbar-brand {
     display: block;
 }
 
-.servicios-cover{
+.servicios-cover {
     display: flex;
     flex-direction: row;
     margin: 20px 5px;
     align-content: center;
 }
 
-.instalaciones_complementarias .row{
+.servicios-cover h2 {
+    font-size: 20px;
+}
+
+.instalaciones_complementarias .row {
     padding: 0;
     margin: 0;
 }
 
-.instalaciones_complementarias .row .col:first-child{
+.instalaciones_complementarias .row .col:first-child {
     background-image: url(assets/001.jpg);
     background-size: cover;
 }
 
-.instalaciones_complementarias .row .col:last-child{
+.instalaciones_complementarias .row .col:last-child {
     background-image: url(assets/002.jpg);
-    
+
 }
 
 /*Tablet*/
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
     .lista__container {
         flex-direction: row;
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en múltiples líneas */
         gap: 10px;
     }
-    
+
     .lista__container li {
-        flex-basis: calc(50% - 20px); /* Divide en dos columnas, con espacio entre ellas */
+        flex-basis: calc(50% - 20px);
+        /* Divide en dos columnas, con espacio entre ellas */
         margin-right: 20px;
     }
-    
+
     /* Eliminar margen derecho del último elemento en la fila */
     .lista__container li:nth-child(2n) {
         margin-right: 0;
     }
 
-    .instalaciones_complementarias ul{
+    .instalaciones_complementarias ul {
         padding: 0 16px !important;
         margin-top: 52px;
+    }
+
+    .servicios-cover h2 {
+        font-size: 30px;
     }
 
     .servicios h3 {
@@ -96,38 +107,40 @@
         font-size: 30px;
     }
 
-    .servicios h4{
+    .servicios h4 {
         font-size: 24px;
     }
 
-    .servicios ul{
-        
+    .servicios ul {
+
         font-size: 20px;
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .lista__container {
         flex-direction: row;
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en múltiples líneas */
         gap: 20px;
     }
-    
+
     .lista__container li {
-        flex-basis: calc(50% - 20px); /* Divide en dos columnas, con espacio entre ellas */
+        flex-basis: calc(50% - 20px);
+        /* Divide en dos columnas, con espacio entre ellas */
         margin-right: 20px;
     }
-    
+
     /* Eliminar margen derecho del último elemento en la fila */
     .lista__container li:nth-child(2n) {
         margin-right: 0;
     }
 
-    .servicios{
+    .servicios {
         padding-top: 100px;
     }
 
-    .servicios .navbar-brand{
+    .servicios .navbar-brand {
         display: none;
     }
 
@@ -135,7 +148,8 @@
         display: flex;
         flex-direction: row;
     }
-        /* PÁGINAS SERVICIOS */
+
+    /* PÁGINAS SERVICIOS */
 
     .servicios .col {
         padding: 0;
@@ -150,26 +164,26 @@
         font-size: 40px;
     }
 
-    .servicios h4{
+    .servicios h4 {
         font-size: 30px;
     }
 
-    .servicios ul{
+    .servicios ul {
         padding: 1em 3em;
         font-size: 24px;
     }
 }
 
 @media (min-width:1900px) {
-    .proyecto-header nav .collapse{
+    .proyecto-header nav .collapse {
         padding: 10px;
     }
-    
-    .proyecto-header .nav-link{
+
+    .proyecto-header .nav-link {
         font-size: 24px !important;
     }
 
-    .proyecto-header .navbar-brand{
+    .proyecto-header .navbar-brand {
         width: 50%;
     }
 }
