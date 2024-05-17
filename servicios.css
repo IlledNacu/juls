@@ -62,11 +62,11 @@
     font-size: 18px;
 }
 
-.instalaciones_complementarias .lista li, .asesoramiento .lista li{
-    margin: 0px 0px 16px;
+.instalaciones_complementarias .lista li, .asesoramiento .lista li, .proyecto_arquitectura li, .gestion li, .agrimensura li{
+    margin: 0px 0px 20px;
 }
 
-.capacitaciones ul{
+.capacitaciones ul {
     line-height: 50px;
 }
 
@@ -74,8 +74,27 @@
     content: none;
 }
 
+.agrimensura ul, .proyecto_arquitectura ul, .gestion ul {
+    padding-bottom: 0 !important;
+}
+.agrimensura ul:last-child, .proyecto_arquitectura ul:last-child, .gestion ul:last-child{
+    padding-top: 0 !important;
+}
+
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
+
+    .proyecto_arquitectura .lista, .gestion .lista, .agrimensura .lista{
+        flex-direction: row;
+    }
+
+    .agrimensura ul, .proyecto_arquitectura ul, .gestion ul {
+        padding-bottom: 36px !important;
+    }
+    .agrimensura ul:last-child, .proyecto_arquitectura ul:last-child, .gestion ul:last-child{
+        padding-top: 36px !important;
+    }
+
     .lista__container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -119,6 +138,18 @@
 }
 
 @media (min-width: 992px) {
+    .proyecto_arquitectura .lista, .gestion .lista, .agrimensura .lista{
+        flex-direction: row;
+    }
+
+    .agrimensura ul, .proyecto_arquitectura ul, .gestion ul {
+        padding-bottom: 36px !important;
+    }
+
+    .agrimensura ul:last-child, .proyecto_arquitectura ul:last-child, .gestion ul:last-child{
+        padding-top: 36px !important;
+    }
+
     .lista__container {
         flex-direction: row;
         flex-wrap: wrap;
