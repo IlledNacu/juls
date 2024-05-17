@@ -1,3 +1,7 @@
+.servicios div .row{
+    padding: 0;
+}
+
 .servicios .col img {
     width: 100%;
 }
@@ -59,7 +63,6 @@
 }
 
 .instalaciones_complementarias .row {
-    padding: 0;
     margin: 0;
 }
 
